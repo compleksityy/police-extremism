@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PoliceExtremism</RootNamespace>
+    <AssemblyName>PoliceExtremism</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Use direct dynamic path fallback rules for standard MelonLoader installations -->
+    <Reference Include="MelonLoader">
+      <HintPath>..\MelonLoader\MelonLoader.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Schedule I\MelonLoader\MelonLoader.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\Schedule I_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Schedule I\Schedule I_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
